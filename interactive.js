@@ -39,5 +39,8 @@ function stringCompare(name) {
 }
 
 function multiples(arr) {
-  return (resArr = arr.filter((num) => parseInt(num) % 3 === 0));
+  return (resArr = arr.filter(
+    (num) =>
+      parseInt(num) % 3 === 0 && parseInt(num) !== "" && parseInt(num) !== 0
+  ));
 }
